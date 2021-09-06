@@ -62,8 +62,9 @@ const extensionObject = new Lang.Class({
 		this.forceQuitPtr = null;
 		this.forceQuitPids = null;
 
-    let icon = new St.Icon({ width: Main.layoutManager.panelBox.get_height(),
-      gicon: Gio.icon_new_for_string('/home/dima/Applications/gnome-system-menu/pop-os.svg') });
+    let icon = new St.Icon({
+      width: Main.layoutManager.panelBox.get_height(),
+      gicon: Gio.icon_new_for_string('/usr/share/gnome-shell/extensions/SystemMenu@jonnius.github.com/pop-os.svg') });
 
 		let label = new St.Label({ text: "" });
 		this.parent(0.0, label.text);

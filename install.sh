@@ -1,5 +1,5 @@
 #!/bin/bash
 
 sh compile.sh
-mkdir -p ~/.local/share/gnome-shell/extensions/SystemMenu@jonnius.github.com
-cp -R * -t ~/.local/share/gnome-shell/extensions/SystemMenu@jonnius.github.com/
+mkdir -p /usr/share/gnome-shell/extensions/SystemMenu@jonnius.github.com
+cp -R * -t /usr/share/gnome-shell/extensions/SystemMenu@jonnius.github.com/

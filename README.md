@@ -2,6 +2,9 @@
 
 System Menu is a GNOME Shell extension that creates a menu on the top panel, containing useful shortcuts. You can install it via [extensions.gnome.org](https://extensions.gnome.org/extension/1204/system-menu/).
 
+## Pop OS
+ This add the Pop os Icon and remove broken in Pop OS links.
+
 ## Manual Installation
 - Clone this repo (or download and unzip it)
 - Run install.sh inside the directory

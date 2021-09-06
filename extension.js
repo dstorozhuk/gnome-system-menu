@@ -38,8 +38,6 @@ let settingsJSON,settings,settingsID;
 let extension;
 let list = [
 { type: "command",	  text: _("About This Computer"), action: ['gnome-control-center', 'info-overview']},
-{ type: "desktop",	  text: _("Software Update"), action: 'update-manager.desktop'},
-{ type: "desktop",	  text: _("Software Center"), action: 'org.gnome.Software.desktop'},
 { type: "separator"},
 { type: "command",	   text: _("System Preferences"), action: ['gnome-control-center', '']},
 { type: "desktop",	   text: _("Gnome Tweak Tool"), action: 'org.gnome.tweaks.desktop'},
@@ -64,8 +62,9 @@ const extensionObject = new Lang.Class({
 		this.forceQuitPtr = null;
 		this.forceQuitPids = null;
 
-		let icon = new St.Icon({ icon_name: 'emblem-default-symbolic',
-					 style_class: 'system-status-icon' });
+    let icon = new St.Icon({ width: Main.layoutManager.panelBox.get_height(),
+      gicon: Gio.icon_new_for_string('/home/dima/Applications/gnome-system-menu/pop-os.svg') });
+
 		let label = new St.Label({ text: "" });
 		this.parent(0.0, label.text);
 		this.actor.add_actor(icon);
